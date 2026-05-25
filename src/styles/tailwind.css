@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer base {
+  :root {
+    /* Primary Background Colors */
+    --primary-bg: #f7c417;
+    --primary-bg-light: #fff0bf;
+    --primary-bg-dark: #0d0602;
+
+    /* Secondary Background Colors */
+    --secondary-bg: #ffffff;
+    --secondary-bg-dark: #0b0b0b;
+    --secondary-bg-light: #f5f5f5;
+    --secondary-bg-accent: #1a1a1a;
+
+    /* Accent Colors */
+    --accent-success: #10a810;
+    --accent-light: #fffeff;
+    --accent-primary: #000000;
+
+    /* Text Colors */
+    --text-primary: #0b0b0b;
+    --text-secondary: #0d0d11;
+    --text-dark: #000000;
+    --text-muted: #606060;
+    --text-light: #c9c9c9;
+    --text-white: #ffffff;
+    --text-white-transparent: #ffffffcc;
+    --text-info: #014970;
+    --text-accent: #f7c417;
+    --text-highlight: #eef8ff;
+    --text-subdued: #1a1a1a;
+
+    /* Border Colors */
+    --border-light: #00000019;
+    --border-medium: #00000033;
+    --border-primary: #0b0b0b;
+    --border-primary-transparent: #0b0b0b33;
+    --border-accent: #5a6e73;
+    --border-warning: #8e7c02;
+    --border-error: #aa2315;
+    --border-highlight: #ffd901;
+    --border-white-transparent: #ffffff33;
+
+    /* Background Main */
+    --bg-main: #ffffff;
+    --bg-overlay: #f5f5f5;
+
+    /* Typography Variables */
+    --font-size-xs: 11px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 32px;
+    --font-size-4xl: 36px;
+    --font-size-5xl: 40px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* Line Height Variables */
+    --line-height-xs: 14px;
+    --line-height-sm: 15px;
+    --line-height-base: 17px;
+    --line-height-md: 18px;
+    --line-height-lg: 19px;
+    --line-height-xl: 20px;
+    --line-height-2xl: 22px;
+    --line-height-3xl: 24px;
+    --line-height-4xl: 25px;
+    --line-height-5xl: 26px;
+    --line-height-6xl: 30px;
+    --line-height-7xl: 36px;
+    --line-height-8xl: 40px;
+    --line-height-9xl: 44px;
+    --line-height-10xl: 48px;
+    --line-height-11xl: 49px;
+    --line-height-12xl: 56px;
+    --line-height-13xl: 60px;
+
+    /* Spacing Variables - Margin */
+    --margin-xs: 4px;
+    --margin-sm: 6px;
+    --margin-md: 8px;
+    --margin-lg: 10px;
+    --margin-xl: 12px;
+    --margin-2xl: 14px;
+    --margin-3xl: 16px;
+    --margin-4xl: 18px;
+    --margin-5xl: 20px;
+    --margin-6xl: 22px;
+    --margin-7xl: 28px;
+    --margin-8xl: 32px;
+    --margin-9xl: 34px;
+    --margin-10xl: 38px;
+    --margin-11xl: 40px;
+    --margin-12xl: 46px;
+    --margin-13xl: 78px;
+    --margin-14xl: 80px;
+    --margin-15xl: 92px;
+    --margin-16xl: 94px;
+    --margin-17xl: 96px;
+    --margin-18xl: 100px;
+    --margin-19xl: 120px;
+    --margin-20xl: 128px;
+    --margin-21xl: 130px;
+    --margin-22xl: 138px;
+    --margin-23xl: 158px;
+    --margin-24xl: 184px;
+    --margin-25xl: 346px;
+    --margin-26xl: 350px;
+    --margin-27xl: 386px;
+    --margin-28xl: 598px;
+    --margin-29xl: 708px;
+
+    /* Spacing Variables - Padding */
+    --padding-xs: 2px;
+    --padding-sm: 4px;
+    --padding-md: 6px;
+    --padding-lg: 8px;
+    --padding-xl: 10px;
+    --padding-2xl: 12px;
+    --padding-3xl: 14px;
+    --padding-4xl: 16px;
+    --padding-5xl: 20px;
+    --padding-6xl: 22px;
+    --padding-7xl: 24px;
+    --padding-8xl: 26px;
+    --padding-9xl: 28px;
+    --padding-10xl: 32px;
+    --padding-11xl: 34px;
+    --padding-12xl: 38px;
+    --padding-13xl: 40px;
+    --padding-14xl: 56px;
+    --padding-15xl: 60px;
+    --padding-16xl: 64px;
+    --padding-17xl: 74px;
+    --padding-18xl: 76px;
+    --padding-19xl: 78px;
+    --padding-20xl: 98px;
+    --padding-21xl: 176px;
+    --padding-22xl: 236px;
+    --padding-23xl: 344px;
+
+    /* Spacing Variables - Gap */
+    --gap-xs: 2px;
+    --gap-sm: 4px;
+    --gap-md: 6px;
+    --gap-lg: 8px;
+    --gap-xl: 10px;
+    --gap-2xl: 12px;
+    --gap-3xl: 14px;
+    --gap-4xl: 16px;
+    --gap-5xl: 18px;
+    --gap-6xl: 20px;
+    --gap-7xl: 24px;
+    --gap-8xl: 30px;
+    --gap-9xl: 32px;
+    --gap-10xl: 34px;
+    --gap-11xl: 36px;
+    --gap-12xl: 38px;
+    --gap-13xl: 40px;
+    --gap-14xl: 46px;
+    --gap-15xl: 48px;
+    --gap-16xl: 62px;
+    --gap-17xl: 74px;
+    --gap-18xl: 76px;
+
+    /* Border Radius Variables */
+    --radius-xs: 1px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+    --radius-full: 70px;
+
+    /* Border Width Variables */
+    --border-width-none: 0px;
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+    --border-width-thick: 6px;
+
+    /* Component-Specific - Button */
+    --button-bg-primary: var(--primary-bg);
+    --button-text-primary: var(--text-secondary);
+    --button-text-white: var(--text-white);
+    --button-border-warning: var(--border-warning);
+
+    /* Component-Specific - Product Card */
+    --card-bg: var(--secondary-bg);
+    --card-border: var(--border-light);
+    --card-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+    /* Component-Specific - Trust Badge */
+    --badge-bg: var(--secondary-bg);
+    --badge-border: var(--border-medium);
+
+    /* Component-Specific - Footer */
+    --footer-bg: var(--secondary-bg-light);
+    --footer-text: var(--text-primary);
+    --footer-link: var(--text-primary);
+
+    /* Component-Specific - Link */
+    --link-text: var(--text-primary);
+    --link-hover: var(--text-info);
+
+    /* Component-Specific - Expandable */
+    --expandable-bg: var(--secondary-bg);
+    --expandable-text: var(--text-primary);
+  }
+}
