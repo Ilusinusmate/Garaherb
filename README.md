@@ -2,8 +2,8 @@
 
 Landing page desenvolvida como parte do desafio técnico para a vaga de Desenvolvedor(a) Web.
 
-🔗 **Deploy:** [garaherb.vercel.app](https://garaherb.vercel.app)   
-🎥 **Vídeo explicativo:**
+🔗 **Deploy:** [DeployVercel](https://garaherb-liart.vercel.app)
+🎥 **Vídeo explicativo:** [Vídeo](https://youtu.be/dsf0ga5xE84)
 
 ---
 
